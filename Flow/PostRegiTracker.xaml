@@ -6,10 +6,10 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1208,2586</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1208,3389</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>PostRegiTracker_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
-    <scg:List x:TypeArguments="x:String" Capacity="36">
+    <scg:List x:TypeArguments="x:String" Capacity="72">
       <x:String>System.Activities</x:String>
       <x:String>System.Activities.Statements</x:String>
       <x:String>System.Activities.Expressions</x:String>
@@ -46,10 +46,11 @@
       <x:String>UiPath.UIAutomationNext.Activities</x:String>
       <x:String>UiPath.Platform.ObjectLibrary</x:String>
       <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Shared.Activities.Business</x:String>
     </scg:List>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
-    <scg:List x:TypeArguments="AssemblyReference" Capacity="45">
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="46">
       <AssemblyReference>System.Activities</AssemblyReference>
       <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
       <AssemblyReference>System.Private.CoreLib</AssemblyReference>
@@ -94,9 +95,10 @@
       <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
       <AssemblyReference>System.Memory</AssemblyReference>
       <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="&quot;1234567890123&quot;&#xA;&quot;6079539190812&quot;" DisplayName="PostRegiTracker" sap:VirtualizedContainerService.HintSize="1218,2521" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap2010:Annotation.AnnotationText="&quot;1234567890123&quot;&#xA;&quot;6079539190812&quot;" DisplayName="PostRegiTracker" sap:VirtualizedContainerService.HintSize="1218,3324" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="sd:DataTable" Name="dt_ExtractDataTable" />
     </Sequence.Variables>
@@ -106,18 +108,72 @@
         <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Always" DisplayName="국내우편(등기소포) 배송조회 - Chrome" sap:VirtualizedContainerService.HintSize="1156,2366" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" OpenMode="Always" ScopeGuid="e0eb93dc-4487-4fbf-a12d-17764c927943" Timeout="10" Version="V2" WindowResize="Maximize">
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Always" DisplayName="국내우편(등기소포) 배송조회 - Chrome" sap:VirtualizedContainerService.HintSize="1156,3169" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" OpenMode="Always" ScopeGuid="e0eb93dc-4487-4fbf-a12d-17764c927943" Timeout="10" Version="V2" WindowResize="Maximize">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1122,2148" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1122,2951" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
+            <ui:RepeatNumberOfTimesX DisplayName="Repeat Number of Times" sap:VirtualizedContainerService.HintSize="1060,763" sap2010:WorkflowViewState.IdRef="RepeatNumberOfTimesX_1" NumberOfTimes="3" StartAt="1">
+              <ui:RepeatNumberOfTimesX.Body>
+                <ActivityAction x:TypeArguments="x:Int32">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="x:Int32" Name="CurrentItem" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="916,604" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NCheckState DisplayName="Check App State '등기번호 입력'" sap:VirtualizedContainerService.HintSize="854,491" sap2010:WorkflowViewState.IdRef="NCheckState_2" ScopeIdentifier="e0eb93dc-4487-4fbf-a12d-17764c927943" Version="V3">
+                      <uix:NCheckState.IfExists>
+                        <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="400,272" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="338,94" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info" Message="[&quot;등기번호 입력란, 로딩 확인 됨 - Break&quot;]" />
+                          <ui:Break sap:VirtualizedContainerService.HintSize="338,25" sap2010:WorkflowViewState.IdRef="Break_1" />
+                        </Sequence>
+                      </uix:NCheckState.IfExists>
+                      <uix:NCheckState.IfNotExists>
+                        <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="400,198" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <uix:NNavigateBrowser Action="Refresh" DisplayName="Navigate Browser - Refresh" sap:VirtualizedContainerService.HintSize="338,83" sap2010:WorkflowViewState.IdRef="NNavigateBrowser_1" Version="V3" />
+                        </Sequence>
+                      </uix:NCheckState.IfNotExists>
+                      <uix:NCheckState.Target>
+                        <uix:TargetAnchorable BrowserURL="https://service.epost.go.kr/iservice/" ContentHash="1W-90kMNdE-RDOAM06U2Wg" DesignTimeRectangle="731, 471, 322, 31" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'등기번호 입력'" FullSelectorArgument="&lt;webctrl id='sid1' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='sid1' tag='INPUT' type='text' class='w_300 f_l m_r_2' aaname='등기번호' check:text='' /&gt;" Guid="45656645-23be-463d-80ce-89aebc6184be" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAUYAAAAjCAYAAADomaOtAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACZSURBVHhe7dRBDYAwAMBA/JuckD3gQQKhgILdJbXQbc65S5LujFGS0jXGMYYkLd3nGAFWZYwAYYwAYYwAYYwAYYwAYYwAYYwAYYwAYYwAYYwAYYwAYYwAYYwAYYwAYYwAYYwAYYwAYYwAYYwAYYwAYYwAYYwAYYwAYYwAYYwAYYwAYYwAYYwA8TtGSVq51xglSWfGKEmP5n4A1rxV2QJQfuEAAAAASUVORK5CYII=" InformativeScreenshot="18a28a251cd28f2ece1635edce62519b.png" Reference="X3y704P8GkasbUaHxv5xtQ/YLAMDm9E2ECTO7AvYTq-rQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='국내우편(등기/소포) 배송조회-배송조회' /&gt;" SearchSteps="Selector" Version="V1" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target DesignTimeRectangle="631, 470, 100, 30" FriendlyName="'등기번호 입력'" FullSelectorArgument="&lt;webctrl parentid='frmDomRigiTrace' tag='DT' innertext='등기번호 입력' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='frmDomRigiTrace' tag='DT' innertext='등기번호 입력' type='' class='m_b_0' aaname='등기번호 입력' check:text='등기번호 입력' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAGgAAAAiCAYAAACz35yrAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAATxSURBVGhD7ZfBZ+xaHMff3xQesyjDZRbXHZc33mIoHXfR0cVQOroIV6XUuHSUJ91MPGqGZ5RGlSwqpWRxTReVoWRRuYypLsIjdBFKF9/3O8lJmzmT1O197nUWGT6bk8w5J7/v+X1/v/Pb09MTSuSlFEhySoEkpxRIUmazWUwpkKQwcdivFEhSSoEkpxRIckqBJKcUSHJ+rkCBB/vUwuRbmP9cILx1YJ058P7Nf/5mohDBbI4gXBx/2zoR5l8tmBcugijv+c9lWaDHAJZagaIoBTRhTHnAHwL4tx48j5i6mHx1YJ9bsPjHRN4QLaUG7XxO70fwRi0o71RYd1Hy/zsbak1B68hD9EiBOO2gstKB+Y0/j6Hxsy4qwj7aI/rP8zsCjyF8q09rp+/X0B3Rnh7Zc2GdBw/D9cW5GbU9J3mf4mHv1KCsGfAEoX8FxQJVO+iPxhgfC5zYcIMkgOG1jobwYTGfhvHH/F+BosCHT+JPTnWo2110tzjbKnr/OHDpmX+/nJ3hlY4m7aOhGnRYbIy/tEjgKtQzn0QV1qHv9S7Ml+876qO9QgLtmLBHPahbHTQr9E1yCVT9sQ2FLoxVBVXVwrwog0QxWSC/WHBvXNiH9LySChTC/Tv//SyN/QnCODM4lD2TgwaUDz04AR/jWVLZMmlfTCDKyOeDEJEN+okLMK5MaB8FgUgw+TIoJxgJdfSdYGkiRnjDBFHQOWYntUigBtQBP60DbTkDf1/OIJdqgLHbQeMdPV9poP1Zh3npxgFdyqBUoPcanHs+tiRQ1uJ8jDvCHgiJBYrgO1QU05QXOaGin1pUloi8eq8eZ8D4lgf4OyxOI4vLz6Bk3sgbo1vlQVtto71W5/WoBeM6v/l4sTgdQ9qzsfeKxXGBEvEy85DQ7nEP3Y0WGnJYHAlz1k+8/nvY0WHPXgIZfOVBOeDFlcbyM6iCxgafY6MZB7u4SeD/WRgj7rmwB4K9pbypSeAZ9FGFQTV3ONDR21XRXW+iXq2iPbBhfpaiSSAvvqbNiBlTxKkNj3t8OKVTTgFT1nRMUt8nFgUiEW/y5icruWGWmScQE75PNlhB+5BlGdUIyjTnqIsam9eav97JkRNYl54gIlsnU4OiORyy2sUDqELbNzC2qBWn+iRXF8eg+4PvmNB3yH8/sHpUQX2tA21gLt5pmB1e6GgxC3hP1sWtLUUUKPlPEjjzwnvOtIR8geL3L4fQNsg+eUbUPtFpt8TAC1DgrW3aOx0ae8obgBhupcI60T2Nn5owTxYZHw+h75Fgf1nwH4Q1fgG5TcLkoBmL0tzS0D80MBwZ0Pc1dJosQNz7KXDeqJMEbMvIrUu5ArHAsS5xnVpx4YMDx4C2a8ChucK7TGfFmDow2H3lzx6s68w44c+C5UxKBXq2OYFMM8IovDKkSJNB1CrrTIhNE75wc2YFu02bjWsGG3uYw536hSf5rQI9Q4fE3qF3xCAVsTlePt1vzKBC4r1IdlFNM6hFjcD43MHkyoF1TJfFVXYii7snkWKB2Dx1tDazvs9RNQyvguUMeoXXM4ja8vhy+0L7DxJV6BYLkU4gRkiFcaAmN+jMSa2skvdfvlKYBfJrEB2AI624W+QCZef5Ifg6uWsQKrfS3P9mkVKgEmkoBZKcUiDJKQWSnFIgySkFkpxSIMkpBZKcUiDJKQWSnFIgyWECzWYz/AecK0HlKZaqfAAAAABJRU5ErkJggg==" SearchSteps="Selector" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NCheckState.Target>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </uix:NCheckState>
+                  </Sequence>
+                </ActivityAction>
+              </ui:RepeatNumberOfTimesX.Body>
+            </ui:RepeatNumberOfTimesX>
             <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" DisplayName="Type Into '등기번호 입력'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="1060,256" sap2010:WorkflowViewState.IdRef="NTypeInto_1" InteractionMode="Simulate" ScopeIdentifier="e0eb93dc-4487-4fbf-a12d-17764c927943" Text="[in_RegNumber]" Timeout="10" Version="V3">
               <uix:NTypeInto.Target>
                 <uix:TargetAnchorable BrowserURL="https://service.epost.go.kr/iservice/" ContentHash="1W-90kMNdE-RDOAM06U2Wg" DesignTimeRectangle="731, 471, 322, 31" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'등기번호 입력'" FullSelectorArgument="&lt;webctrl id='sid1' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='sid1' tag='INPUT' type='text' class='w_300 f_l m_r_2' aaname='등기번호' check:text='' /&gt;" Guid="45656645-23be-463d-80ce-89aebc6184be" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAUYAAAAjCAYAAADomaOtAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACZSURBVHhe7dRBDYAwAMBA/JuckD3gQQKhgILdJbXQbc65S5LujFGS0jXGMYYkLd3nGAFWZYwAYYwAYYwAYYwAYYwAYYwAYYwAYYwAYYwAYYwAYYwAYYwAYYwAYYwAYYwAYYwAYYwAYYwAYYwAYYwAYYwAYYwAYYwAYYwAYYwAYYwAYYwAYYwA8TtGSVq51xglSWfGKEmP5n4A1rxV2QJQfuEAAAAASUVORK5CYII=" InformativeScreenshot="18a28a251cd28f2ece1635edce62519b.png" Reference="X3y704P8GkasbUaHxv5xtQ/YLAMDm9E2ECTO7AvYTq-rQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='국내우편(등기/소포) 배송조회-배송조회' /&gt;" SearchSteps="Selector" Version="V1" Visibility="Interactive" WaitForReadyArgument="Complete">
@@ -138,6 +194,12 @@
                   </uix:VerifyExecutionTypeIntoOptions.Timeout>
                 </uix:VerifyExecutionTypeIntoOptions>
               </uix:NTypeInto.VerifyOptions>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
             </uix:NTypeInto>
             <uix:NClick ClickType="Single" DisplayName="Click '조회'" sap:VirtualizedContainerService.HintSize="1060,195" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="e0eb93dc-4487-4fbf-a12d-17764c927943" Timeout="15" Version="V3">
               <uix:NClick.Target>
