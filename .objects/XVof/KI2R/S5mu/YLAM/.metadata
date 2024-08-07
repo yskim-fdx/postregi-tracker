@@ -1,0 +1,14 @@
+﻿{
+  "Id": "YLAMDm9E2ECTO7AvYTq-rQ",
+  "Reference": "X3y704P8GkasbUaHxv5xtQ/YLAMDm9E2ECTO7AvYTq-rQ",
+  "ParentRef": "X3y704P8GkasbUaHxv5xtQ/S5muS06SnU6D_cMne3XPkw",
+  "Name": "등기번호 입력",
+  "Type": "Element",
+  "TaxonomyType": "Input",
+  "Created": "2024-08-07T01:37:57.2615749Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=22.10.5.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=22.10.2.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "Updated": "2024-08-07T01:37:57.2615749Z"
+}

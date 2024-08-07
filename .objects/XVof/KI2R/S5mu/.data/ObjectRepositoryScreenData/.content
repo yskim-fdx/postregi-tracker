@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryScreenData ContentHash="FtB1alX9y0u2S3Urn6335g" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryScreenData.Data>
+    <TargetApp x:Key="TargetApp" Area="0, 0, 0, 0" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABsSURBVDhPzY9BDsAgCAS5+P8nKxKki4D21k4kkWExkf5D59Nbe1269pCFqtIVz3HI3ObC+oa2Bi6vO7o0IAOm6s0FwaBDPwkuC6JDP8mck3ug6tEZ1QD9uqMTgti4zcPLp9IVTxY8la59DtEAYkvXPQAV8jYAAAAASUVORK5CYII=" Selector="&lt;html app='chrome.exe' title='국내우편(등기/소포) 배송조회-배송조회' /&gt;" Title="국내우편(등기/소포) 배송조회-배송조회" Url="https://service.epost.go.kr/iservice/">
+      <imageRef attrName="InformativeScreenshot" originalValue="6e39bbdc29da2d8a9852f22ce7fa7284.jpg" xmlns="">0AgZpTGwHmEGz_CEb-69GmQ</imageRef>
+    </TargetApp>
+  </ObjectRepositoryScreenData.Data>
+</ObjectRepositoryScreenData>

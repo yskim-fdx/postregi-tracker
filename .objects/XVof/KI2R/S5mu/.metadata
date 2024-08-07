@@ -1,0 +1,17 @@
+﻿{
+  "Id": "S5muS06SnU6D_cMne3XPkw",
+  "Reference": "X3y704P8GkasbUaHxv5xtQ/S5muS06SnU6D_cMne3XPkw",
+  "ParentRef": "X3y704P8GkasbUaHxv5xtQ/KI2Rihct00a5p7FcsTeSuw",
+  "Name": "국내우편(등기소포) 배송조회 - Chrome",
+  "Type": "Screen",
+  "TaxonomyType": "Screen",
+  "Created": "2024-08-07T01:18:14.4930762Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=22.10.5.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=22.10.2.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "Updated": "2024-08-07T01:29:04.989974Z",
+  "UpdatedBy": [
+    "UiPath.Platform, Version=22.10.2.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}
