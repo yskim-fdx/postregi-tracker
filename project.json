@@ -3,11 +3,8 @@
   "description": "우체국",
   "main": "Main.xaml",
   "dependencies": {
-    "UiPath.Excel.Activities": "[2.16.4]",
-    "UiPath.Mail.Activities": "[1.20.3]",
-    "UiPath.System.Activities": "[22.10.8]",
-    "UiPath.Testing.Activities": "[22.10.4]",
-    "UiPath.UIAutomation.Activities": "[22.10.8]"
+    "UiPath.System.Activities": "[22.10.4]",
+    "UiPath.UIAutomation.Activities": "[22.10.5]"
   },
   "webServices": [],
   "entitiesStores": [],
