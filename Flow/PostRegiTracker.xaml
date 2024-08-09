@@ -6,7 +6,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1208,3389</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1208,3375</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>PostRegiTracker_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="72">
@@ -98,7 +98,7 @@
       <AssemblyReference>UiPath.Workflow</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="&quot;1234567890123&quot;&#xA;&quot;6079539190812&quot;" DisplayName="PostRegiTracker" sap:VirtualizedContainerService.HintSize="1218,3324" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap2010:Annotation.AnnotationText="&quot;1234567890123&quot;&#xA;&quot;6079539190812&quot;" DisplayName="PostRegiTracker" sap:VirtualizedContainerService.HintSize="1218,3310" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="sd:DataTable" Name="dt_ExtractDataTable" />
     </Sequence.Variables>
@@ -108,19 +108,19 @@
         <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Always" DisplayName="국내우편(등기소포) 배송조회 - Chrome" sap:VirtualizedContainerService.HintSize="1156,3169" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" OpenMode="Always" ScopeGuid="e0eb93dc-4487-4fbf-a12d-17764c927943" Timeout="10" Version="V2" WindowResize="Maximize">
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Always" DisplayName="국내우편(등기소포) 배송조회 - Chrome" sap:VirtualizedContainerService.HintSize="1156,3157" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" OpenMode="Always" ScopeGuid="e0eb93dc-4487-4fbf-a12d-17764c927943" Timeout="10" Version="V2" WindowResize="Maximize">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1122,2951" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1122,2940" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:RepeatNumberOfTimesX DisplayName="Repeat Number of Times" sap:VirtualizedContainerService.HintSize="1060,763" sap2010:WorkflowViewState.IdRef="RepeatNumberOfTimesX_1" NumberOfTimes="3" StartAt="1">
+            <ui:RepeatNumberOfTimesX DisplayName="Repeat Number of Times" sap:VirtualizedContainerService.HintSize="1060,760" sap2010:WorkflowViewState.IdRef="RepeatNumberOfTimesX_1" NumberOfTimes="3" StartAt="1">
               <ui:RepeatNumberOfTimesX.Body>
                 <ActivityAction x:TypeArguments="x:Int32">
                   <ActivityAction.Argument>
@@ -132,7 +132,7 @@
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <uix:NCheckState DisplayName="Check App State '등기번호 입력'" sap:VirtualizedContainerService.HintSize="854,491" sap2010:WorkflowViewState.IdRef="NCheckState_2" ScopeIdentifier="e0eb93dc-4487-4fbf-a12d-17764c927943" Version="V3">
+                    <uix:NCheckState DisplayName="Check App State '등기번호 입력'" sap:VirtualizedContainerService.HintSize="854,489" sap2010:WorkflowViewState.IdRef="NCheckState_2" ScopeIdentifier="e0eb93dc-4487-4fbf-a12d-17764c927943" Version="V3">
                       <uix:NCheckState.IfExists>
                         <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="400,272" sap2010:WorkflowViewState.IdRef="Sequence_7">
                           <sap:WorkflowViewStateService.ViewState>
@@ -140,18 +140,18 @@
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
-                          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="338,94" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info" Message="[&quot;등기번호 입력란, 로딩 확인 됨 - Break&quot;]" />
+                          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="338,92" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info" Message="[&quot;등기번호 입력란, 로딩 확인 됨 - Break&quot;]" />
                           <ui:Break sap:VirtualizedContainerService.HintSize="338,25" sap2010:WorkflowViewState.IdRef="Break_1" />
                         </Sequence>
                       </uix:NCheckState.IfExists>
                       <uix:NCheckState.IfNotExists>
-                        <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="400,198" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                        <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="400,197" sap2010:WorkflowViewState.IdRef="Sequence_8">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
-                          <uix:NNavigateBrowser Action="Refresh" DisplayName="Navigate Browser - Refresh" sap:VirtualizedContainerService.HintSize="338,83" sap2010:WorkflowViewState.IdRef="NNavigateBrowser_1" Version="V3" />
+                          <uix:NNavigateBrowser Action="Refresh" DisplayName="Navigate Browser - Refresh" sap:VirtualizedContainerService.HintSize="338,82" sap2010:WorkflowViewState.IdRef="NNavigateBrowser_1" Version="V3" />
                         </Sequence>
                       </uix:NCheckState.IfNotExists>
                       <uix:NCheckState.Target>
@@ -174,7 +174,7 @@
                 </ActivityAction>
               </ui:RepeatNumberOfTimesX.Body>
             </ui:RepeatNumberOfTimesX>
-            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" DisplayName="Type Into '등기번호 입력'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="1060,256" sap2010:WorkflowViewState.IdRef="NTypeInto_1" InteractionMode="Simulate" ScopeIdentifier="e0eb93dc-4487-4fbf-a12d-17764c927943" Text="[in_RegNumber]" Timeout="10" Version="V3">
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" DisplayName="Type Into '등기번호 입력'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="1060,254" sap2010:WorkflowViewState.IdRef="NTypeInto_1" InteractionMode="Simulate" ScopeIdentifier="e0eb93dc-4487-4fbf-a12d-17764c927943" Text="[in_RegNumber]" Timeout="10" Version="V3">
               <uix:NTypeInto.Target>
                 <uix:TargetAnchorable BrowserURL="https://service.epost.go.kr/iservice/" ContentHash="1W-90kMNdE-RDOAM06U2Wg" DesignTimeRectangle="731, 471, 322, 31" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'등기번호 입력'" FullSelectorArgument="&lt;webctrl id='sid1' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='sid1' tag='INPUT' type='text' class='w_300 f_l m_r_2' aaname='등기번호' check:text='' /&gt;" Guid="45656645-23be-463d-80ce-89aebc6184be" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAUYAAAAjCAYAAADomaOtAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACZSURBVHhe7dRBDYAwAMBA/JuckD3gQQKhgILdJbXQbc65S5LujFGS0jXGMYYkLd3nGAFWZYwAYYwAYYwAYYwAYYwAYYwAYYwAYYwAYYwAYYwAYYwAYYwAYYwAYYwAYYwAYYwAYYwAYYwAYYwAYYwAYYwAYYwAYYwAYYwAYYwAYYwAYYwAYYwA8TtGSVq51xglSWfGKEmP5n4A1rxV2QJQfuEAAAAASUVORK5CYII=" InformativeScreenshot="18a28a251cd28f2ece1635edce62519b.png" Reference="X3y704P8GkasbUaHxv5xtQ/YLAMDm9E2ECTO7AvYTq-rQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='국내우편(등기/소포) 배송조회-배송조회' /&gt;" SearchSteps="Selector" Version="V1" Visibility="Interactive" WaitForReadyArgument="Complete">
                   <uix:TargetAnchorable.Anchors>
@@ -201,7 +201,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </uix:NTypeInto>
-            <uix:NClick ClickType="Single" DisplayName="Click '조회'" sap:VirtualizedContainerService.HintSize="1060,195" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="e0eb93dc-4487-4fbf-a12d-17764c927943" Timeout="15" Version="V3">
+            <uix:NClick ClickType="Single" DisplayName="Click '조회'" sap:VirtualizedContainerService.HintSize="1060,193" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="e0eb93dc-4487-4fbf-a12d-17764c927943" Timeout="15" Version="V3">
               <uix:NClick.Target>
                 <uix:TargetAnchorable BrowserURL="https://service.epost.go.kr/iservice/" ContentHash="_BR2pXeKU0-Bm5_sH4kwmA" DesignTimeRectangle="1055, 471, 53, 31" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'조회'" FullSelectorArgument="&lt;webctrl parentid='frmDomRigiTrace' tag='DD' /&gt;&lt;webctrl parentid='frmDomRigiTrace' tag='A' innertext='조회' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='frmDomRigiTrace' tag='DD' /&gt;&lt;webctrl parentid='frmDomRigiTrace' tag='A' innertext='조회' type='' class='btn_s f_l' aaname='조회' check:text='조회' /&gt;" Guid="56f5fa3b-c08a-4fea-96c4-138ed043dde7" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADkAAAAjCAYAAAAuVaJ4AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGzSURBVGhD7ZUxa8JAGIb7424qFISCUCqCoUPpEDp0ylKXujk0CGapiyiIU4a6XaG0IELgBlEo1yUFiQgBIVAIEd5e7FUqSjtoSzzzwHtc7o5wT458dxBFEVTPfkk6jqNc1kqqRCqpCqmkKqSSqpBwSR+8y0W7GX8mGY4Yet3eanouArlmQb+GXD63SK0vx8FgElO0m/GPkhTmGYFWd+WKmACsZcKsrEmLxbPJllwmAK/rOLy04c3k0JwQHpMf4Zmic98BfZTPzBOzuyI55bCvsyBER/tNji0RYlA/R7ZgoFwpwyhkoVXjU4xJuqTPQas6MsfnsLoe/BcbxdMMtJs22CiUiwRTCiMjRBYn7KKR12GP436CJcOhBU2cTO1BFBmxef+1By5LpOe0UbqywL6qz2wA60SD5XgIpgG8YQP6UQlP7/HkDv2T7JbA/OmVUxe0aUAjGow7G2wix5WQnIXz0/sMRYmUQOP+mIOJ4sP9pEqObeiEiELzW8TmJx0Uv92PuYu4+MgrpNlJsORW2QtJ8a9WqGg3I+GS2yGVVIVUUhVSSVVIJVVhvyVVy4qkytkDyQgfk4kVGWsUPLwAAAAASUVORK5CYII=" InformativeScreenshot="e6aea0ca5898d7de3673b9b7edcf9770.png" Reference="X3y704P8GkasbUaHxv5xtQ/KniYyivyN02eu3YAhL6pzA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='국내우편(등기/소포) 배송조회-배송조회' /&gt;" SearchSteps="Selector" Version="V1" Visibility="Interactive" />
               </uix:NClick.Target>
@@ -213,39 +213,35 @@
                 </uix:VerifyExecutionOptions>
               </uix:NClick.VerifyOptions>
             </uix:NClick>
-            <uix:NCheckState DisplayName="Check App State '배송조회'" sap:VirtualizedContainerService.HintSize="1060,1506" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="e0eb93dc-4487-4fbf-a12d-17764c927943" Version="V3">
+            <uix:NCheckState DisplayName="Check App State '배송조회'" sap:VirtualizedContainerService.HintSize="1060,1498" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="e0eb93dc-4487-4fbf-a12d-17764c927943" Version="V3">
               <uix:NCheckState.IfExists>
-                <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="606,1287" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="606,1281" sap2010:WorkflowViewState.IdRef="Sequence_5">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[dt_ExtractDataTable]" DisplayName="배송조회 테이블 추출" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Table'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='날짜' ReferenceName='날짜' ReferenceIdx='0'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='시간' ReferenceName='시간' ReferenceIdx='1'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='발생국' ReferenceName='발생국' ReferenceIdx='2'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='발생국 Url' ReferenceName='발생국 Url' ReferenceIdx='3'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='처리현황' ReferenceName='처리현황' ReferenceIdx='4'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='처리현황 Url' ReferenceName='처리현황 Url' ReferenceIdx='5'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract-table get_columns_name='1' get_empty_columns='1' columns_name_source='Longest'&gt;&lt;column name='날짜' attr='text' /&gt;&lt;column name='시간' attr='text' /&gt;&lt;column name='발생국' attr='text' name2='발생국 Url' attr2='href' /&gt;&lt;column name='처리현황' attr='text' name2='처리현황 Url' attr2='href' /&gt;&lt;/extract-table&gt;" sap:VirtualizedContainerService.HintSize="544,158" sap2010:WorkflowViewState.IdRef="NExtractData_1" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="e0eb93dc-4487-4fbf-a12d-17764c927943" Version="V3">
+                  <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[dt_ExtractDataTable]" DisplayName="배송조회 테이블 추출" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Table'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='날짜' ReferenceName='날짜' ReferenceIdx='0'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='시간' ReferenceName='시간' ReferenceIdx='1'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='발생국' ReferenceName='발생국' ReferenceIdx='2'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='발생국 Url' ReferenceName='발생국 Url' ReferenceIdx='3'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='처리현황' ReferenceName='처리현황' ReferenceIdx='4'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='처리현황 Url' ReferenceName='처리현황 Url' ReferenceIdx='5'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract-table get_columns_name='1' get_empty_columns='1' columns_name_source='Longest'&gt;&lt;column name='날짜' attr='text' /&gt;&lt;column name='시간' attr='text' /&gt;&lt;column name='발생국' attr='text' name2='발생국 Url' attr2='href' /&gt;&lt;column name='처리현황' attr='text' name2='처리현황 Url' attr2='href' /&gt;&lt;/extract-table&gt;" sap:VirtualizedContainerService.HintSize="544,157" sap2010:WorkflowViewState.IdRef="NExtractData_1" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="e0eb93dc-4487-4fbf-a12d-17764c927943" Version="V3">
                     <uix:NExtractData.Target>
                       <uix:TargetAnchorable ContentHash="Xdj0z5Gt9US_Tl6KfXJMwA" DesignTimeRectangle="610, 520, 940, 750" DesignTimeScaleFactor="1" FriendlyName="'배송조회'" FullSelectorArgument="&lt;webctrl id='processTable' tag='TABLE' /&gt;" Guid="8b42bf2f-5a19-49f3-a528-747d2428342f" InformativeScreenshot="0bef63ea1a45b272bffda48ff37c3f72.png" Reference="X3y704P8GkasbUaHxv5xtQ/lr2nYRIC3Ey4EoKdJq3O6A" ScopeSelectorArgument="&lt;html app='chrome.exe' title='국내우편(등기/소포) 배송조회-배송조회' /&gt;" SearchSteps="Selector" Version="V1" Visibility="Interactive" />
                     </uix:NExtractData.Target>
                   </uix:NExtractData>
-                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="544,94" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;테이블 추줄 완료&quot;]" />
-                  <ui:IfElseIf DisplayName="Else If - 데이터 존재 확인" sap:VirtualizedContainerService.HintSize="544,842" sap2010:WorkflowViewState.IdRef="IfElseIf_1">
+                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="544,92" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;테이블 추줄 완료&quot;]" />
+                  <ui:IfElseIf DisplayName="Else If - 데이터 존재 확인" sap:VirtualizedContainerService.HintSize="544,837" sap2010:WorkflowViewState.IdRef="IfElseIf_1">
                     <ui:IfElseIf.ConditionBlocks>
                       <sc:BindingList x:TypeArguments="ui:IfElseIfBlock" AllowEdit="True" AllowNew="True" AllowRemove="True" RaiseListChangedEvents="True">
                         <ui:IfElseIfBlock BlockType="If" Condition="[dt_ExtractDataTable.RowCount &gt; 0]">
                           <ui:IfElseIfBlock.Then>
-                            <Sequence DisplayName="작업진행" sap:VirtualizedContainerService.HintSize="400,225" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                            <Sequence DisplayName="작업진행" sap:VirtualizedContainerService.HintSize="400,224" sap2010:WorkflowViewState.IdRef="Sequence_3">
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
-                              <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Flow\ExtractPostData.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="338,114" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="Flow\ExtractPostData.xaml">
+                              <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Flow\ExtractPostData.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="338,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="Flow\ExtractPostData.xaml">
                                 <ui:InvokeWorkflowFile.Arguments>
-                                  <InArgument x:TypeArguments="sd:DataTable" x:Key="in_dt_PostReg">
-                                    <VisualBasicValue x:TypeArguments="sd:DataTable" ExpressionText="dt_ExtractDataTable" />
-                                  </InArgument>
-                                  <OutArgument x:TypeArguments="x:String" x:Key="out_ResultMessage">
-                                    <VisualBasicReference x:TypeArguments="x:String" ExpressionText="out_ResultMessage" />
-                                  </OutArgument>
+                                  <InArgument x:TypeArguments="sd:DataTable" x:Key="in_dt_PostReg">[dt_ExtractDataTable]</InArgument>
+                                  <OutArgument x:TypeArguments="x:String" x:Key="out_ResultMessage">[out_ResultMessage]</OutArgument>
                                 </ui:InvokeWorkflowFile.Arguments>
                               </ui:InvokeWorkflowFile>
                             </Sequence>
@@ -253,7 +249,7 @@
                         </ui:IfElseIfBlock>
                         <ui:IfElseIfBlock BlockType="Else">
                           <ui:IfElseIfBlock.Then>
-                            <Sequence sap2010:Annotation.AnnotationText="&quot;현재 고객님이 신청하신 접수번호에 대하여 배달정보를 찾지 못했습니다. 정보가 아직 입력되지 않았거나 처리 중입니다.&quot;" DisplayName="데이터 없음 종료" sap:VirtualizedContainerService.HintSize="493,384" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                            <Sequence sap2010:Annotation.AnnotationText="&quot;현재 고객님이 신청하신 접수번호에 대하여 배달정보를 찾지 못했습니다. 정보가 아직 입력되지 않았거나 처리 중입니다.&quot;" DisplayName="데이터 없음 종료" sap:VirtualizedContainerService.HintSize="493,382" sap2010:WorkflowViewState.IdRef="Sequence_4">
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -290,13 +286,13 @@
                 </Sequence>
               </uix:NCheckState.IfExists>
               <uix:NCheckState.IfNotExists>
-                <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="400,204" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="400,205" sap2010:WorkflowViewState.IdRef="Sequence_6">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <Throw Exception="[New SystemException(&quot;테이블 확인 불가, 시스템 오류&quot;)]" sap:VirtualizedContainerService.HintSize="338,91" sap2010:WorkflowViewState.IdRef="Throw_1" />
+                  <Throw Exception="[New SystemException(&quot;테이블 확인 불가, 시스템 오류&quot;)]" sap:VirtualizedContainerService.HintSize="338,90" sap2010:WorkflowViewState.IdRef="Throw_1" />
                 </Sequence>
               </uix:NCheckState.IfNotExists>
               <uix:NCheckState.Target>
